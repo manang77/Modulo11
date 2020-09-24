@@ -184,9 +184,9 @@ console.log("*** RESERVA                                                        
 console.log("*****************************************************************************");
 console.log(reservas);
 console.log("*****************************************************************************");
-console.log("*** SUBTOTAL -> " + myReservation.reservationSubTotal);
+console.log("*** SUBTOTAL -> " + myReservation.reservationSubTotal.toFixed(2));
 console.log("*****************************************************************************");
-console.log("*** TOTAL -> " + myReservation.reservationTotal);
+console.log("*** TOTAL -> " + myReservation.reservationTotal.toFixed(2));
 console.log("*****************************************************************************");
 console.log("");
 console.log("*****************************************************************************");
@@ -196,9 +196,9 @@ console.log("*** RESERVA                                                        
 console.log("*****************************************************************************");
 console.log(reservas);
 console.log("*****************************************************************************");
-console.log("*** SUBTOTAL -> " + myReservationTourOperator.reservationSubTotal);
+console.log("*** SUBTOTAL -> " + myReservationTourOperator.reservationSubTotal.toFixed(2));
 console.log("*****************************************************************************");
-console.log("*** TOTAL -> " + myReservationTourOperator.reservationTotal);
+console.log("*** TOTAL -> " + myReservationTourOperator.reservationTotal.toFixed(2));
 console.log("*****************************************************************************");
 console.log("");
 console.log("*****************************************************************************");
@@ -208,9 +208,9 @@ console.log("*** RESERVA                                                        
 console.log("*****************************************************************************");
 console.log(reservas);
 console.log("*****************************************************************************");
-console.log("*** SUBTOTAL -> " + myReservationParticular.reservationSubTotal);
+console.log("*** SUBTOTAL -> " + myReservationParticular.reservationSubTotal.toFixed(2));
 console.log("*****************************************************************************");
-console.log("*** TOTAL -> " + myReservationParticular.reservationTotal);
+console.log("*** TOTAL -> " + myReservationParticular.reservationTotal.toFixed(2));
 console.log("*****************************************************************************");
 console.log("*****************************************************************************");
 console.log("*** LAB MODULO 11 ==> DESAFIO + EJERCICIO ADICIONAL RESERVA TOUR OPERADOR ***");
@@ -219,9 +219,11 @@ console.log("*** RESERVA                                                        
 console.log("*****************************************************************************");
 console.log(reservas);
 console.log("*****************************************************************************");
-console.log("*** SUBTOTAL -> " + myReservationForTourOperator.reservationSubTotal);
+console.log(
+  "*** SUBTOTAL -> " + myReservationForTourOperator.reservationSubTotal.toFixed(2)
+);
 console.log("*****************************************************************************");
-console.log("*** TOTAL -> " + myReservationForTourOperator.reservationTotal);
+console.log("*** TOTAL -> " + myReservationForTourOperator.reservationTotal.toFixed(2));
 console.log("*****************************************************************************");
 
 //*********************************************************************************************
@@ -259,7 +261,7 @@ class Cuenta {
     console.log("Nombre Beneficiario: " + this._beneficiaryName);
     console.log("Nombre Cuenta......: " + this._accountName);
     console.log("Tipo Cuenta........: " + this._accountType);
-    console.log("Saldo..............: " + this._accountBalance);
+    console.log("Saldo..............: " + this._accountBalance.toFixed(2));
     console.log("***************************************************");
   }
 
@@ -313,7 +315,7 @@ class accountingBook {
       console.log("************** LISTADO DE TRANSACCIONES *********************");
       console.log("Cuenta Origen.: " + transaction.originAccount.accountId);
       console.log("Cuenta Destino: " + transaction.destinationAccount.accountId);
-      console.log("Importe.......: " + transaction.transactionAmount);
+      console.log("Importe.......: " + transaction.transactionAmount.toFixed(2));
       console.log("=============================================================");
     });
   }
